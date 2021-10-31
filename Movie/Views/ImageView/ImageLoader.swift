@@ -35,7 +35,6 @@ final class ImageLoader: ObservableObject {
             return
         }
         
-        // Get image from URL
         NetworkManager.shared.fetchImageData(from: url) { result in
             switch result {
             case .success(let data):

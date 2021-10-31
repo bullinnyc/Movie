@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB0450E32715965600BF76FF /* BoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0450E22715965600BF76FF /* BoxViewModel.swift */; };
 		DB0450E5271596AC00BF76FF /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0450E4271596AC00BF76FF /* Box.swift */; };
 		DB0450E92715D7F300BF76FF /* Extension + UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0450E82715D7F300BF76FF /* Extension + UIWindow.swift */; };
 		DB0F4EFD271A97BE00D729D2 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4EFC271A97BE00D729D2 /* ImageManager.swift */; };
@@ -32,7 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB0450E22715965600BF76FF /* BoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewModel.swift; sourceTree = "<group>"; };
 		DB0450E4271596AC00BF76FF /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		DB0450E82715D7F300BF76FF /* Extension + UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIWindow.swift"; sourceTree = "<group>"; };
 		DB0F4EFC271A97BE00D729D2 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
@@ -109,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				DB9EBEBA271416BA00BD04DF /* MovieApp.swift */,
+				DBB2F553272ED09B0096D560 /* ViewModels */,
 				DB0450E72715C81700BF76FF /* Views */,
 				DBFB24CA2715416300D404F3 /* Modifiers */,
 				DB9EBECA2714178D00BD04DF /* Services */,
@@ -146,6 +145,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DBB2F553272ED09B0096D560 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB9EBED027141CF000BD04DF /* FilmViewModel.swift */,
+				DB9EBECE27141CD800BD04DF /* BoxListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		DBFB24C72715341600D404F3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,9 +183,6 @@
 		DBFB24CE27154AB300D404F3 /* BoxListView */ = {
 			isa = PBXGroup;
 			children = (
-				DB0450E22715965600BF76FF /* BoxViewModel.swift */,
-				DB9EBED027141CF000BD04DF /* FilmViewModel.swift */,
-				DB9EBECE27141CD800BD04DF /* BoxListViewModel.swift */,
 				DB9EBEBC271416BA00BD04DF /* BoxListView.swift */,
 				DBFB24CF27154E0300D404F3 /* SectionView.swift */,
 				DB9EBED42714799100BD04DF /* RowView.swift */,
@@ -272,7 +277,6 @@
 				DB0F4EFF271A97E300D729D2 /* TemporaryImageCache.swift in Sources */,
 				DB0450E5271596AC00BF76FF /* Box.swift in Sources */,
 				DBFB24C62715340D00D404F3 /* Extension + Formatter.swift in Sources */,
-				DB0450E32715965600BF76FF /* BoxViewModel.swift in Sources */,
 				DB9EBECF27141CD800BD04DF /* BoxListViewModel.swift in Sources */,
 				DBFB24CC2715419000D404F3 /* ForegroundColor.swift in Sources */,
 			);

@@ -28,8 +28,7 @@ class BoxListViewModel: ObservableObject {
         NetworkManager.shared.fetchData(from: JsonURL.box.rawValue) { result in
             switch result {
             case .success(let box):
-                let boxViewModel = BoxViewModel(box: box)
-                self.films = boxViewModel.films
+                self.films = box.films.map { FilmViewModel(film: $0) }
                 completion(false)
             case .failure(let error):
                 print(error.rawValue)
