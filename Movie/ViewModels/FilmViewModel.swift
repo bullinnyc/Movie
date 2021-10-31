@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FilmViewModel: ObservableObject, Identifiable {
+class FilmViewModel: Identifiable {
     // MARK: - Public Properties
     var id: Int {
         film.id
