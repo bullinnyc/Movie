@@ -12,24 +12,31 @@ class FilmViewModel: Identifiable {
     var id: Int {
         film.id
     }
+    
     var localizedName: String {
         film.localizedName
     }
+    
     var name: String {
         film.name
     }
+    
     var year: Int {
         film.year
     }
+    
     var rating: Double? {
         film.rating
     }
+    
     var imageUrl: String? {
         film.imageUrl
     }
+    
     var description: String? {
         film.description
     }
+    
     var genres: [String] {
         film.genres
     }
