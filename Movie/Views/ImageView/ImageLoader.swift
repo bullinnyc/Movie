@@ -28,14 +28,15 @@ final class ImageLoader: ObservableObject {
     
     // MARK: - Public Methods
     func loadImage(from url: String) {
-        // Check image to cache
+        // Check image in cache
         if let cachedImage = cache[url] {
             image[ImageStatus.loaded.bool] = cachedImage
             print("Image from cache")
             return
         }
         
-        NetworkManager.shared.fetchImageData(from: url) { result in
+        // Download image
+        NetworkManager.shared.fetchImageData(from: url) { [unowned self] result in
             switch result {
             case .success(let data):
                 let uiImage = ImageManager.shared.getImageFromData(from: data)
